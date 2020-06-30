@@ -1,0 +1,57 @@
+# ~/.config/zsh/zshrc
+#
+#░▀▀█░█▀▀░█░█░█▀▄░█▀▀
+#░▄▀░░▀▀█░█▀█░█▀▄░█░░
+#░▀▀▀░▀▀▀░▀░▀░▀░▀░▀▀▀
+
+
+### Theme
+# Pywal color scheme in new terminals
+$HOME/.local/bin/wal -qRe
+
+### Antigen
+# Load antigen
+antigen_path=$HOME/.local/share/antigen.zsh
+
+if [[ ! -f $antigen_path ]]; then
+    echo "[+] Downloading Antigen"
+    curl -sL git.io/antigen -o $antigen_path &&
+	echo "[$] Downloaded successfully"
+fi
+
+source $HOME/.local/share/antigen.zsh
+
+# Set up antigen
+antigen use oh-my-zsh
+antigen theme romkatv/powerlevel10k
+
+# Antigen bundles
+antigen bundle git
+antigen bundle pip
+antigen bundle tperich/auto-ls
+antigen bundle zsh-users/zsh-completions
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle MichaelAquilina/zsh-you-should-use
+antigen apply
+
+# Auto-ls config
+if command -v lsd > /dev/null; then
+    AUTO_LS_COMMANDS=(lsd) AUTO_LS_NEWLINE=false 
+else
+    AUTO_LS_COMMANDS=(ls) AUTO_LS_NEWLINE=false 
+fi
+
+
+### Source
+# Custom aliases
+source $ZDOTDIR/aliases.zsh
+
+# Custom functions
+source $ZDOTDIR/helpers.zsh
+
+# Install missing stuff
+source $ZDOTDIR/installers.zsh
+
+# To customize prompt, run `p10k configure` or edit $ZDOTDIR/p10k.zsh.
+[[ -f $ZDOTDIR/p10k.zsh ]] && source $ZDOTDIR/p10k.zsh

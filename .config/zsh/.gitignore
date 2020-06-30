@@ -1,0 +1,4 @@
+.zprofile
+.zcompdump*
+.p10k.zsh
+*.zwc

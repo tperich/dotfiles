@@ -1,0 +1,99 @@
+# -- General --
+super + Return
+    $TERMINAL
+
+ctrl + alt + e
+    $TERMINAL
+
+super + d
+    dmenu_run
+
+ctrl + alt + l
+    slock
+
+ctrl + alt + q
+    slock
+
+ctrl + shift + 0
+    $HOME/scripts/other/utility/wiki.py
+
+# Reload sxhkd
+super + r; s
+    pkill -USR1 -x sxhkd && \
+    notify-send -t 3000 "sxhkd config" "Reloaded sxhkd"
+
+
+# -- Start stuff --
+# General
+super + e
+    $TERMINAL -e neomutt
+
+super + o; f
+    firefox
+
+super + s; n
+    $TERMINAL -x "NNN_USE_EDITOR=1 nnn"
+
+super + v
+    $TERMINAL -x "nvim"
+
+# Chat
+super + s; c
+    i3-msg workspace 5:foxtrot && \
+    i3-msg layout tabbed && \
+    $HOME/scripts/run/chat.sh \
+    i3-msg workspace back_and_forth
+
+# Music
+super + s; m
+    i3-msg workspace 6:golf \
+    pgrep spotify && spotify
+    # chromium-browser --app=https://music.youtube.com
+
+
+# -- Misc --
+# Screenshot
+Print
+    $HOME/scripts/utility/scrot.sh
+
+# Change wallpaper
+ctrl + super + w
+    $HOME/scripts/utility/wallpaper.py
+
+
+# Brightness
+ctrl + alt + {Up,Down}
+    $HOME/scripts/utility/brightness/{increment,decrement}.sh
+
+XF86MonBrightness{Up,Down}
+    $HOME/scripts/utility/brightness/{increment,decrement}.sh
+
+# -- Audio --
+# Volume controls
+XF86AudioRaiseVolume
+    amixer -q sset Master 5%+ && \
+	killall notify-osd & \
+	notify-send -t 500 Volume $(amixer sget Master | grep -oE '\[...\]' | tr -d \[\])
+
+XF86AudioLowerVolume
+    amixer -q sset Master 5%- && \
+	killall notify-osd & \
+	notify-send -t 500 Volume $(amixer sget Master | grep -oE '\[...\]' | tr -d \[\])
+
+XF86AudioMute
+    amixer -q sset Master toggle & \
+	amixer -q sset Speaker toggle
+
+# Spotify controls
+XF86AudioPlay
+    $HOME/scripts/utility/spotify_control playpause
+
+XF86Audio{Next,Prev}
+    $HOME/scripts/utility/spotify_control {next, previous}
+
+
+# -- Mouse --
+# Change workspaces
+button{8,9}
+    ~/scripts/workspaces/{prev_workspace,next_workspace}.sh
+

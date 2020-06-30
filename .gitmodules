@@ -1,0 +1,3 @@
+[submodule ".config/themepack"]
+	path = .config/themepack
+	url = /home/demon/.config/tmux/themepack
