@@ -1,3 +1,6 @@
 [submodule ".config/tmux/themepack"]
 	path = .config/tmux/themepack
 	url = https://github.com/jimeh/tmux-themepack.git
+[submodule "scripts"]
+	path = scripts
+	url = ssh://github.com/tperich/scripts
