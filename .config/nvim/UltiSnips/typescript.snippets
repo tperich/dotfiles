@@ -1,0 +1,50 @@
+# React's set state
+snippet setState "Set state" b
+this.setState({
+	$1: "$2",
+});
+endsnippet
+
+# Console Log
+snippet clg "Console log"
+console.${2:log}($1);
+endsnippet
+
+snippet cm "Comment"
+// ${1:This is a comment.}
+endsnippet
+
+# Comment block
+snippet cmb "Comment block"
+/**
+ * $1
+ */
+endsnippet
+
+# Try catch block
+snippet try "Try catch block"
+try {
+  $1
+} catch (e) {
+  $2
+}
+endsnippet
+
+### Testing
+# It should
+snippet it "It should" b
+it(\`should ${1:do something}\`, () => {
+  $2
+
+  expect().toBe();
+});
+endsnippet
+
+# It should async
+snippet ita "It should async" b
+it(\`should ${1:do something}\`, async () => {
+  ${2:await}
+
+  expect().toBe();
+});
+endsnippet

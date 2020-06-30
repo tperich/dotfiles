@@ -1,0 +1,42 @@
+# ----------------------------
+# UltiSnips - Snippet snippets
+# ----------------------------
+
+### General
+# Snippet snippet dawg
+snippet snip "Snippet" b
+snippet ${1:Trigger} "${2:Description}"${3: Options}
+$0
+`echo endsnippet`
+endsnippet
+
+
+### Comments
+# Comment block
+snippet com "Comment block" b
+# ----------------------------
+# ${1:Comment}
+# ----------------------------
+endsnippet
+
+# Comment block relative
+global !p
+def create_border(char, message):
+	result = ""
+
+	for chr_ in message:
+		result += char
+
+	if len(message) <= 20:
+		return char * 20
+
+	return result
+endglobal
+
+snippet comr "Comment block relative" b
+# `!p snip.rv = create_border("-", t[1])`
+# ${1:Comment}
+# `!p snip.rv = create_border("-", t[1])`
+$0
+endsnippet
+

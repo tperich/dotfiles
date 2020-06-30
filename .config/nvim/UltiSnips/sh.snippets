@@ -1,0 +1,22 @@
+# -----------------------
+# UltiSnips - sh snippets
+# -----------------------
+
+snippet "(#!|sheb(ang)?)" "Shebang" !rb
+#!/bin/sh
+
+$0
+endsnippet
+
+snippet iffile "Check if file exists" b
+if [[ -f "${1:file.txt}" ]]; then
+	${2:contents = $(cat $1)}
+fi
+endsnippet
+
+
+snippet ifvar "Check if var is set" b
+if [[ -z $${1:var} ]]; then
+	${2:echo $$1}
+fi
+endsnippet

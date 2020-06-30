@@ -1,0 +1,81 @@
+# -------------------------
+# UltiSnips Python snippets
+# -------------------------
+
+### General
+# Print function
+snippet pr "Print function"
+print("${1:[$]} ${2:hello!}")
+endsnippet
+
+# Try except
+snippet tryexcept "Try except block"
+try:
+	${1:os.system("ping google.com")}
+except Exception as exc:
+	${2:print(f"[!] Error: {exc}")}
+endsnippet
+
+
+### Functions
+# Basic function
+snippet def "Function" b
+def ${1:say}(${2}):
+	${3:print(${4:$2})}
+endsnippet
+
+# Typed function
+snippet deft "Typed function" b
+def ${1:say}(${2:msg}: ${3:str}) -> ${4:None}:
+	${5:print($2)}
+endsnippet
+
+# if function
+snippet if "if function" b
+if ${1:foo} == ${2:bar}:
+	${3:print(${4:$1, $2})}
+endsnippet
+
+
+### Loops
+# For loop
+snippet for "For loop" b
+for ${1:item} in $1s:
+	print($1)
+endsnippet
+
+# While loop
+snippet while "While loop" b
+while ${1:x} ${2:<} ${3:10}:
+	${4:print("${5:hello}")}
+endsnippet
+
+
+### Requests
+# Get request
+snippet reqget "Get request" b
+${1:data} = {}
+
+try:
+	res = requests.get(${2:"https://gnu.org"})
+	$1 = res.json()
+except Exception as exc:
+	print("[!] {exc}")
+
+${3:print(${4:$1})}
+endsnippet
+
+# Post request
+snippet reqpost "Post request" b
+data = {
+	"${1:hello}": "${2:world}"
+}
+
+try:
+	res = requests.post(${3:"https://gnu/org"})
+	data = res.json()
+except Exception as exc:
+	print("[!] {exc}")
+
+print(data)
+endsnippet

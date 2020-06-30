@@ -1,0 +1,21 @@
+snippet clg "Console log"
+console.log(${1:"${2:Log!}"})
+endsnippet
+
+snippet clge "Console log extended"
+console.log(${1:"${2:Log: }", ${3}})
+endsnippet
+
+snippet fun "Function" b
+function ${1:say}(${2:msg}) {
+	${3:console.log(msg);}
+}
+endsnippet
+
+snippet impfd "Import default from" b
+import ${2:Default} from '$1'
+endsnippet
+
+snippet impf "Import from" b
+import { ${2:this} } from '$1'
+endsnippet
