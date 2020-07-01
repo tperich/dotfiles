@@ -74,6 +74,10 @@ alias tma="tmux a"
 alias tml="tmux ls"
 alias tmks="tmux kill-server"
 
+# Tmux scripts
+alias startvpn="~/scripts/tmux/vpn.sh"
+alias startmobile="~/scripts/tmux/mobile.sh"
+
 # Utility
 alias wttr="curl wttr.in/novi+sad"
 alias wttrk="curl wttr.in/cologne"
