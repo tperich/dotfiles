@@ -4,8 +4,8 @@
 "░░▀░░▀░▀░▀▀▀░▀░▀░▀▀▀
 "
 
-set background=dark
-colorscheme palenight
+" set background=dark
+colorscheme iceberg
 
 " Airline
 let g:airline_theme="palenight"

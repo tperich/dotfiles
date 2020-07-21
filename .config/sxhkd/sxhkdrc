@@ -1,8 +1,5 @@
 # -- General --
-super + Return
-    $TERMINAL
-
-ctrl + alt + e
+{alt, super, ctrl + alt + e} + Return
     $TERMINAL
 
 super + d
@@ -54,7 +51,8 @@ super + s; m
 # -- Misc --
 # Screenshot
 Print
-    $HOME/scripts/utility/scrot.sh
+    flameshot gui -p ~/Pictures/Screenshots
+    # $HOME/scripts/utility/scrot.sh
 
 # Change wallpaper
 ctrl + super + w
@@ -82,7 +80,8 @@ XF86AudioLowerVolume
 
 XF86AudioMute
     amixer -q sset Master toggle & \
-	amixer -q sset Speaker toggle
+	amixer -q sset Speaker toggle & \
+	amixer -q sset Headphone toggle
 
 # Spotify controls
 XF86AudioPlay

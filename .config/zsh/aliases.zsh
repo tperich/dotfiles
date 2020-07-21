@@ -76,6 +76,7 @@ alias tmks="tmux kill-server"
 
 # Tmux scripts
 alias startvpn="~/scripts/tmux/vpn.sh"
+alias stopvpn="sudo killall openvpn && tmux kill-session -t vpn"
 alias startmobile="~/scripts/tmux/mobile.sh"
 
 # Utility
