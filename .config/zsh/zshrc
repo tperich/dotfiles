@@ -7,7 +7,7 @@
 
 ### Theme
 # Pywal color scheme in new terminals
-$HOME/.local/bin/wal -qRe
+# $HOME/.local/bin/wal -qRe
 
 ### Antigen
 # Load antigen
@@ -42,6 +42,11 @@ else
     AUTO_LS_COMMANDS=(ls) AUTO_LS_NEWLINE=false 
 fi
 
+# Load autojump
+source /usr/share/autojump/autojump.zsh
+
+# Load fzf keybinds
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 ### Source
 # Custom aliases

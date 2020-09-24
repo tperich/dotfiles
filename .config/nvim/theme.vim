@@ -5,7 +5,7 @@
 "
 
 " set background=dark
-colorscheme iceberg
+colorscheme palenight
 
 " Airline
 let g:airline_theme="palenight"
