@@ -1,0 +1,35 @@
+[DownloadDialog Settings]
+Height 1080=680
+Width 1920=1017
+
+[KFileDialog Settings]
+Recent Files[$e]=video-1585339796.mp4,file:$HOME/Downloads/Screenshot_20210330-090403_Instagram.jpg,file:$HOME/Pictures/Wallpapers/Wallhaven/Cyber/wallhaven-lmmx32.jpg,file:$HOME/Downloads/app-release.apk,file:$HOME/Desktop/AlwaysTrustUserCerts.zip,file:$HOME/Desktop/Vids/video-1585339796.mp4
+Recent URLs[$e]=file:$HOME/Downloads/
+detailViewIconSize=40
+
+[KPropertiesDialog]
+Height 1080=477
+Width 1920=418
+
+[PlasmaRunnerManager]
+LaunchCounts=1 services_firefox.desktop,2 services_spotify.desktop,2 services_kitty.desktop
+pluginWhiteList=desktopsessions,services,places,PowerDevil,calculator,unitconverter,shell,bookmarks,recentdocuments,locations,baloosearch
+
+[PlasmaTransientsConfig]
+PreloadWeight=42
+
+[PlasmaViews][Panel 3][Defaults]
+thickness=34
+
+[PlasmaViews][Panel 3][Horizontal1920]
+thickness=34
+
+[PlasmaViews][Panel 42][Defaults]
+thickness=30
+
+[ScreenConnectors]
+0=eDP-1-1
+1=HDMI-1-1
+
+[Updates]
+performed=/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/unlock_widgets.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/move_desktop_layout_config.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/obsolete_kickoffrc.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/desktop-base.js
