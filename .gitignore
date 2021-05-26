@@ -4,3 +4,4 @@ zsh/.config/zsh/.zcompdump
 # NeoVim
 nvim/.config/nvim/autoload/
 nvim/.config/nvim/plugged/
+*.zwc
