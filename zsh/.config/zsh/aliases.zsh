@@ -14,12 +14,17 @@ if command -v lsd > /dev/null; then
     alias lll="lsd -Al --group-dirs=first"
     alias lls="lsd -Al --group-dirs=first --total-size --sizesort"
     alias peek="lsd -Al --color=always --group-dirs=first | less -r"
-else
+else if uname -s | grep "Linux"; then
     alias l="ls -1 --color --group-directories-first"
     alias ls="ls --color --group-directories-first"
     alias ll="l -l"
     alias la="l -A"
     alias lll="l -Ali"
+else
+    alias l="ls"
+    alias ll="ls -l"
+    alias la="ls -al"
+    alias lll="ls -ali"
 fi
 
 # Other commands
