@@ -98,6 +98,8 @@ alias fdate="date +\"%d_%m_%Y_%I_%M_%p\""
 alias inet="hostname -I | cut -d' ' -f1"
 alias boing="nohup mplayer ~/Music/Sounds/a_tone.mp3 > /dev/null 2>&1"
 alias john="$HOME/.local/bin/johntheripper/john"
+alias update-from-master="git stash --include-untracked; git checkout master; \
+    git pull origin master; git checkout -; git merge master; git stash pop"
 
 # Binaries
 if command -v nvim > /dev/null; then
