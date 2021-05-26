@@ -43,7 +43,8 @@ else
 fi
 
 # Load autojump
-source /usr/share/autojump/autojump.zsh
+autojump_path="/usr/share/autojump/autojump.zsh"
+[ -f $autojump_path ] && source $autojump_path
 
 # Load fzf keybinds
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
