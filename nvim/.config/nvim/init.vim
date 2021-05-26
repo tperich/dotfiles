@@ -23,6 +23,8 @@ set updatetime=300          " Prevent performance delays
 set foldmethod=marker       " Fold on markers
 set wildmode=longest,list   " Get bash-like tab completions
 set number relativenumber   " Relative line numbers with current
+set list                    " Show line endings and tabs
+set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 filetype plugin indent on   " Set filetype and indent on file change
 
 " Disable auto comments everywhere
