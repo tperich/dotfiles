@@ -40,3 +40,6 @@ export PATH="$PATH:$ANDROID_HOME/platform-tools"
 
 # Fixes weird PHPStorm blank window bug
 export _JAVA_AWT_WM_NONREPARENTING=1
+
+# Load .zshrc
+source ~/.zshrc
