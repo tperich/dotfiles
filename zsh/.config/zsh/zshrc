@@ -61,3 +61,8 @@ source $ZDOTDIR/installers.zsh
 
 # To customize prompt, run `p10k configure` or edit $ZDOTDIR/p10k.zsh.
 [[ -f $ZDOTDIR/p10k.zsh ]] && source $ZDOTDIR/p10k.zsh
+
+if compaudit > /dev/null | grep "/"; then
+    echo "Fixing insecure directories..."
+    chmod g-w $(compaudit | tail -n +2)
+fi
