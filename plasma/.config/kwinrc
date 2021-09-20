@@ -14,7 +14,8 @@ Id_1=d4428c88-6ce7-4993-9fa5-f97601428191
 Id_2=683678aa-8d22-4a68-893a-46334a96d264
 Id_3=d9bc49b6-b54e-4c4d-adfd-ab7326d704ec
 Id_4=617d2011-402b-4d75-ad96-9709cf90945c
-Number=4
+Id_5=6dff717e-374d-4a3b-8a6a-cee702f0e3a3
+Number=5
 Rows=1
 
 [Effect-Blur]
@@ -61,7 +62,6 @@ LongitudeFixed=19.8362
 Mode=Location
 
 [Plugins]
-desktopchangeosdEnabled=true
 highlightwindowEnabled=true
 windowgeometryEnabled=false
 
@@ -121,4 +121,4 @@ WindowSnapZone=10
 
 [org.kde.kdecoration2]
 library=org.kde.kwin.aurorae
-theme=__aurorae__svg__Qogir-dark-circle
+theme=__aurorae__svg__Qogir-circle

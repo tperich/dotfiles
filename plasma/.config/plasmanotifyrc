@@ -7,14 +7,15 @@ Seen=true
 [Applications][org.gnome.dejadup]
 Seen=true
 
+[Applications][rhythmbox]
+Seen=true
+
 [Applications][slack]
 Seen=true
 
 [Applications][thunderbird]
 Seen=true
 
-[DoNotDisturb]
-Until=2021,3,19,16,43,0
-
 [Notifications]
-PopupTimeout=3000
+PopupPosition=BottomRight
+PopupTimeout=4000

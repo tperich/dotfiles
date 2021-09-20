@@ -62,7 +62,7 @@ PreloadWeight=0
 [Containments][1][General]
 ToolBoxButtonState=topcenter
 ToolBoxButtonX=727
-positions=4,16,desktop:/Docs,0,0,desktop:/jodin,3,0,desktop:/Grdelicki Urnebes - Udri Brus Li.mp3,0,7,desktop:/Vids,2,0,desktop:/bs.png,0,6,desktop:/IMG_20210404_110323.jpg,0,5,desktop:/org.kde.kdeconnect.app.desktop,0,4,desktop:/font.png,0,8,desktop:/Screenshot_20210226_215313.png,0,3,desktop:/AlwaysTrustUserCerts.zip,0,2,desktop:/cert.der,0,1,desktop:/Pictures,1,0
+positions=3,16,desktop:/cvjova.pdf,0,10,desktop:/recording-2021-09-06_14.48.45.mp4,0,5,desktop:/org.kde.kdeconnect.app.desktop,0,4,desktop:/Vids,2,0,desktop:/588a667fd06f6719692a2d19.png,0,6,desktop:/cert.der,0,1,desktop:/Docs,0,0,desktop:/Pictures,1,0,desktop:/2021-09-16_10-29.png,0,3,desktop:/clicks.png,0,2,desktop:/2021-09-11_18-29.png,0,9,desktop:/favicon,0,8
 sortMode=-1
 
 [Containments][1][Wallpaper][com.darkeye.animatedImage][General]
@@ -194,7 +194,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][3][Applets][9][Configuration]
-PreloadWeight=47
+PreloadWeight=100
 
 [Containments][3][ConfigDialog]
 DialogHeight=86
@@ -260,7 +260,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][8][Applets][11][Configuration]
-PreloadWeight=57
+PreloadWeight=72
 
 [Containments][8][Applets][11][Configuration][ConfigDialog]
 DialogHeight=600
@@ -271,14 +271,14 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][8][Applets][12][Configuration]
-PreloadWeight=37
+PreloadWeight=47
 
 [Containments][8][Applets][13]
 immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][8][Applets][13][Configuration]
-PreloadWeight=92
+PreloadWeight=100
 
 [Containments][8][Applets][13][Configuration][ConfigDialog]
 DialogHeight=600
@@ -331,61 +331,38 @@ immutability=1
 plugin=org.kde.plasma.vault
 
 [Containments][8][Applets][19][Configuration]
-PreloadWeight=0
+PreloadWeight=10
 
 [Containments][8][Applets][20]
 immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][8][Applets][20][Configuration]
-PreloadWeight=7
+PreloadWeight=100
 
 [Containments][8][Applets][21]
 immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][8][Applets][21][Configuration]
-PreloadWeight=38
+PreloadWeight=43
 
 [Containments][8][Applets][22]
 immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][8][Applets][22][Configuration]
-PreloadWeight=20
+PreloadWeight=0
 
 [Containments][8][Applets][23]
 immutability=1
 plugin=org.kde.plasma.diskquota
 
 [Containments][8][Applets][23][Configuration]
-PreloadWeight=42
-
-[Containments][8][Applets][24]
-immutability=1
-plugin=org.kde.plasma.weather
+PreloadWeight=47
 
 [Containments][8][Applets][24][Configuration]
-PreloadWeight=97
-pressureUnit=5022
-showHumidityInTooltip=true
-showPressureInTooltip=true
-showTemperatureInCompactMode=false
-showTemperatureInTooltip=true
-showWindInTooltip=true
-source=wettercom|weather|Novi Sad, Central Serbia, RS|RS0VO0004;Novi Sad
-speedUnit=9000
-temperatureUnit=6001
-updateInterval=30
-visibilityUnit=2007
-weatherServiceProviders=bbcukmet,noaa,wettercom
-
-[Containments][8][Applets][24][Configuration][ConfigDialog]
-DialogHeight=600
-DialogWidth=800
-
-[Containments][8][Applets][24][Shortcuts]
-global=Ctrl+Alt+W
+PreloadWeight=42
 
 [Containments][8][Applets][42]
 immutability=1
@@ -402,10 +379,11 @@ DialogWidth=800
 PreloadWeight=0
 
 [Containments][8][General]
-extraItems=org.kde.plasma.clipboard,org.kde.plasma.keyboardindicator,org.kde.plasma.bluetooth,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.volume,org.kde.plasma.networkmanagement,org.kde.plasma.nightcolorcontrol,org.kde.plasma.battery,org.kde.plasma.mediacontroller,org.kde.kdeconnect,org.kde.plasma.devicenotifier,org.kde.plasma.vault,org.kde.plasma.diskquota,org.kde.plasma.weather
-hiddenItems=org.kde.plasma.clipboard
+extraItems=org.kde.plasma.clipboard,org.kde.plasma.keyboardindicator,org.kde.plasma.bluetooth,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.networkmanagement,org.kde.plasma.nightcolorcontrol,org.kde.plasma.battery,org.kde.plasma.mediacontroller,org.kde.kdeconnect,org.kde.plasma.devicenotifier,org.kde.plasma.vault,org.kde.plasma.diskquota,org.kde.plasma.volume,mate-optimus
+hiddenItems=org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,mate-optimus,org.kde.plasma.mediacontroller
 knownItems=org.kde.plasma.clipboard,org.kde.plasma.keyboardindicator,org.kde.plasma.bluetooth,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.volume,org.kde.plasma.networkmanagement,org.kde.plasma.nightcolorcontrol,org.kde.plasma.battery,org.kde.plasma.mediacontroller,org.kde.kdeconnect,org.kde.plasma.devicenotifier,org.kde.plasma.vault
+shownItems=org.kde.plasma.notifications
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/Screenshot_20210226_215313.png,0,desktop:/Grdelicki Urnebes - Udri Brus Li.mp3,0,desktop:/bs.png,0,desktop:/jodin,0,desktop:/Docs,0,desktop:/org.kde.kdeconnect.app.desktop,0,desktop:/cert.der,0,desktop:/Vids,0,desktop:/Pictures,0,desktop:/AlwaysTrustUserCerts.zip,0,desktop:/IMG_20210404_110323.jpg,0,desktop:/font.png,0
+screenMapping=desktop:/Pictures,0,desktop:/Vids,0,desktop:/cvjova.pdf,0,desktop:/favicon,0,desktop:/588a667fd06f6719692a2d19.png,0,desktop:/clicks.png,0,desktop:/recording-2021-09-06_14.48.45.mp4,0,desktop:/cert.der,0,desktop:/2021-09-11_18-29.png,0,desktop:/Docs,0,desktop:/org.kde.kdeconnect.app.desktop,0,desktop:/2021-09-16_10-29.png,0
