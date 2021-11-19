@@ -24,8 +24,8 @@ command! -nargs=0 JestCurrent :call CocAction('runCommand', 'jest.fileTest', ['%
 
 
 " Fuzzy find {{{
-nnoremap <C-t> :Files<CR>
-nnoremap <C-f> :Buffers<CR>
+nnoremap <C-t> :FZF<CR>
+"nnoremap <C-f> :Buffers<CR>
 " }}}
 
 " Files {{{
@@ -66,6 +66,27 @@ for i in range(1, 8)
 endfor
 
 nnoremap <A-w> :tabclose<CR>
+"}}}
+
+"Stolen from ThePrimeagen {{{
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+
+nnoremap Y yg$
+nnoremap n nzzzv
+nnoremap N Nzzzv
+nnoremap J mzJ`z
+
+" greatest remap ever
+xnoremap <leader>p "_dP
+
+" next greatest remap ever : asbjornHaland
+nnoremap <leader>y "+y
+vnoremap <leader>y "+y
+nnoremap <leader>Y gg"+yG
+
+nnoremap <leader>d "_d
+vnoremap <leader>d "_d
 "}}}
 
 " HTML {{{

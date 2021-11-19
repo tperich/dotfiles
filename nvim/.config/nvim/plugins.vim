@@ -21,11 +21,11 @@ Plug 'airblade/vim-gitgutter'
 Plug 'bling/vim-airline'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'jlanzarotta/bufexplorer'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
+"Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+"Plug 'junegunn/fzf.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'ryanoasis/vim-devicons'
-Plug 'scrooloose/nerdtree'
+"Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
@@ -42,6 +42,7 @@ Plug 'sbdchd/neoformat'
 Plug 'posva/vim-vue'
 Plug 'dense-analysis/ale'
 Plug 'leafgarland/typescript-vim'
+Plug 'fatih/vim-go'
 
 " Syntax
 Plug 'pangloss/vim-javascript'
@@ -62,6 +63,10 @@ call plug#end()
 "}}}
 
 " Plugins config {{{
+
+" Fix fzf
+packadd fzf
+
 " Deoplete
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#enable_ignore_case = 1
