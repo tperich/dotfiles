@@ -9,6 +9,7 @@
 # Pywal color scheme in new terminals
 # $HOME/.local/bin/wal -qRe
 
+zmodload zsh/zprof
 ### Antigen
 # Load antigen
 antigen_path=$HOME/.local/share/antigen.zsh
@@ -66,3 +67,9 @@ if compaudit > /dev/null | grep "/"; then
     echo "Fixing insecure directories..."
     chmod g-w $(compaudit | tail -n +2)
 fi
+
+# PATH="/home/demon/perl5/bin${PATH:+:${PATH}}"; export PATH;
+# PERL5LIB="/home/demon/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+# PERL_LOCAL_LIB_ROOT="/home/demon/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+# PERL_MB_OPT="--install_base \"/home/demon/perl5\""; export PERL_MB_OPT;
+# PERL_MM_OPT="INSTALL_BASE=/home/demon/perl5"; export PERL_MM_OPT;
