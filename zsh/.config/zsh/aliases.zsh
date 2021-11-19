@@ -50,18 +50,9 @@ alias cds="cd ~/scripts"
 alias cdd="cd ~/Downloads"
 alias cmds="cd /media/$USER/Storage"
 alias cmde="cd /media/$USER/Secondary"
-alias cciw="cd ~/code/web/itiv/vpn-frontend"
-alias ccib="cd ~/code/web/itiv/vpn-brain-php"
-alias ccwaf="cd ~/code/web/artfizio/client"
-alias ccwab="cd ~/code/web/artfizio/server"
 
 # Repos
-alias cca="cd ~/code/web/activecollab"
-alias ccaw="cd ~/code/web/activecollab"
-alias ccad=" cd ~/code/web/activecollab/devops"
-alias ccam="cd ~/code/mobile/activecollab-mobile"
-alias ccamt="cd ~/code/mobile/test-activecollab-mobile"
-alias ccaq="cd ~/code/mobile/qr2reg-mobile"
+alias ccs="cd ~/code/stackpath"
 
 # Config directories
 alias c.i="cd ~/.config/i3"
@@ -76,6 +67,7 @@ alias glom="git pull origin master"
 alias glum="git pull upstream master"
 alias gloh="git pull origin HEAD"
 alias gpoh="git push origin HEAD"
+alias yolo="git push origin master --force"
 
 # npm
 alias nrs="npm run start"
