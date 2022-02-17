@@ -1,5 +1,5 @@
 [ActionPlugins][0]
-MidButton;NoModifier=org.kde.paste
+MiddleButton;NoModifier=org.kde.paste
 RightButton;NoModifier=org.kde.contextmenu
 wheel:Vertical;NoModifier=org.kde.switchdesktop
 
@@ -25,7 +25,7 @@ immutability=1
 plugin=org.kde.fancyclock
 
 [Containments][1][Applets][36][Configuration]
-PreloadWeight=42
+PreloadWeight=0
 
 [Containments][1][Applets][36][Configuration][ConfigDialog]
 DialogHeight=600
@@ -43,7 +43,7 @@ immutability=1
 plugin=org.kde.NowPlaying
 
 [Containments][1][Applets][39][Configuration]
-PreloadWeight=42
+PreloadWeight=0
 
 [Containments][1][Applets][39][Configuration][ConfigDialog]
 DialogHeight=600
@@ -53,8 +53,8 @@ DialogWidth=800
 fontFamily=.\x7f
 
 [Containments][1][ConfigDialog]
-DialogHeight=913
-DialogWidth=1192
+DialogHeight=1020
+DialogWidth=1920
 
 [Containments][1][Configuration]
 PreloadWeight=0
@@ -62,12 +62,13 @@ PreloadWeight=0
 [Containments][1][General]
 ToolBoxButtonState=topcenter
 ToolBoxButtonX=727
-positions=3,16,desktop:/cvjova.pdf,0,10,desktop:/recording-2021-09-06_14.48.45.mp4,0,5,desktop:/org.kde.kdeconnect.app.desktop,0,4,desktop:/Vids,2,0,desktop:/588a667fd06f6719692a2d19.png,0,6,desktop:/cert.der,0,1,desktop:/Docs,0,0,desktop:/Pictures,1,0,desktop:/2021-09-16_10-29.png,0,3,desktop:/clicks.png,0,2,desktop:/2021-09-11_18-29.png,0,9,desktop:/favicon,0,8
+iconSize=2
+positions=1,20,desktop:/Algodoo.desktop,0,7,desktop:/log4j.pdf,0,4,desktop:/training_generator.py,0,5,desktop:/WAF-DataTeamOnboarding-100122-1026-936.pdf,0,2,desktop:/NSMPDP.pdf,0,3,desktop:/Images,0,0,desktop:/Out-of-Band Data Exfitration Research Report.pdf,0,1,desktop:/Arduino Create Agent.desktop,0,8,desktop:/RaVWo7+N.csv,0,6
 sortMode=-1
 
 [Containments][1][Wallpaper][com.darkeye.animatedImage][General]
 FillMode=2
-Image=file:///home/demon/Pictures/Wallpapers/Wallhaven/Cyber/wallhaven-lmmx32.jpg
+Image=file:///home/demon/Pictures/Wallpapers/Wallhaven/Space/wallhaven-xldl53.jpg
 
 [Containments][1][Wallpaper][online.knowmad.shaderwallpaper][General]
 checkedSmartPlay=true
@@ -94,14 +95,18 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][2][ConfigDialog]
-DialogHeight=925
-DialogWidth=1336
+DialogHeight=1020
+DialogWidth=1920
 
 [Containments][2][Configuration]
 PreloadWeight=0
 
+[Containments][2][General]
+sortMode=-1
+
 [Containments][2][Wallpaper][org.kde.image][General]
-Image=file:///usr/share/wallpapers/Path/contents/images/2560x1600.jpg
+Image=file:///home/demon/Pictures/Wallpapers/Wallhaven/SciFi/wallhaven-2edom9.jpg
+SlidePaths=/home/demon/.local/share/wallpapers,/usr/share/plasma/wallpapers,/usr/share/wallpapers
 
 [Containments][3]
 activityId=
@@ -131,8 +136,8 @@ plugin=org.kde.plasma.kickoff
 PreloadWeight=100
 
 [Containments][3][Applets][4][Configuration][ConfigDialog]
-DialogHeight=757
-DialogWidth=1082
+DialogHeight=600
+DialogWidth=800
 
 [Containments][3][Applets][4][Configuration][General]
 favoritesPortedToKAstats=true
@@ -149,7 +154,10 @@ immutability=1
 plugin=org.kde.plasma.panelspacer
 
 [Containments][3][Applets][41][Configuration]
-PreloadWeight=42
+PreloadWeight=0
+
+[Containments][3][Applets][41][Configuration][General]
+expanding=false
 
 [Containments][3][Applets][5]
 immutability=1
@@ -178,6 +186,7 @@ DialogHeight=720
 DialogWidth=960
 
 [Containments][3][Applets][6][Configuration][General]
+launchers=
 maxStripes=1
 showOnlyCurrentScreen=true
 
@@ -186,7 +195,7 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][3][Applets][7][Configuration]
-PreloadWeight=100
+PreloadWeight=51
 SystrayContainmentId=8
 
 [Containments][3][Applets][9]
@@ -194,7 +203,16 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][3][Applets][9][Configuration]
-PreloadWeight=100
+PreloadWeight=76
+
+[Containments][3][Applets][9][Configuration][Appearance]
+customDateFormat=dd.M.yy.
+enabledCalendarPlugins=/usr/lib/x86_64-linux-gnu/qt5/plugins/plasmacalendarplugins/holidaysevents.so
+firstDayOfWeek=1
+
+[Containments][3][Applets][9][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
 
 [Containments][3][ConfigDialog]
 DialogHeight=86
@@ -220,18 +238,18 @@ immutability=1
 plugin=org.kde.plasma.appmenu
 
 [Containments][42][Applets][43][Configuration]
-PreloadWeight=42
+PreloadWeight=0
 
 [Containments][42][Applets][44]
 immutability=1
 plugin=org.kde.plasma.taskmanager
 
 [Containments][42][Applets][44][Configuration]
-PreloadWeight=42
+PreloadWeight=0
 
 [Containments][42][Applets][44][Configuration][ConfigDialog]
-DialogHeight=600
-DialogWidth=800
+DialogHeight=540
+DialogWidth=720
 
 [Containments][42][Applets][44][Configuration][General]
 showOnlyCurrentScreen=true
@@ -241,10 +259,41 @@ DialogHeight=86
 DialogWidth=1920
 
 [Containments][42][Configuration]
-PreloadWeight=42
+PreloadWeight=0
 
 [Containments][42][General]
 AppletOrder=43;44
+
+[Containments][45]
+activityId=5d950ce5-3b27-446e-bcc9-8ddd5689ab5f
+formfactor=0
+immutability=1
+lastScreen=2
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=org.kde.image
+
+[Containments][45][Configuration]
+PreloadWeight=0
+
+[Containments][45][Wallpaper][org.kde.image][General]
+Image=file:///home/demon/.local/share/wallpapers/Qogir-dark/contents/images/1920x1080.jpg
+
+[Containments][46]
+ItemGeometriesHorizontal=
+activityId=5d950ce5-3b27-446e-bcc9-8ddd5689ab5f
+formfactor=0
+immutability=1
+lastScreen=3
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=org.kde.image
+
+[Containments][46][Configuration]
+PreloadWeight=0
+
+[Containments][46][Wallpaper][org.kde.image][General]
+Image=file:///home/demon/.local/share/wallpapers/Qogir-dark/contents/images/1920x1080.jpg
 
 [Containments][8]
 activityId=
@@ -260,25 +309,25 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][8][Applets][11][Configuration]
-PreloadWeight=72
+PreloadWeight=0
 
 [Containments][8][Applets][11][Configuration][ConfigDialog]
-DialogHeight=600
-DialogWidth=800
+DialogHeight=540
+DialogWidth=720
 
 [Containments][8][Applets][12]
 immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][8][Applets][12][Configuration]
-PreloadWeight=47
+PreloadWeight=0
 
 [Containments][8][Applets][13]
 immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][8][Applets][13][Configuration]
-PreloadWeight=100
+PreloadWeight=0
 
 [Containments][8][Applets][13][Configuration][ConfigDialog]
 DialogHeight=600
@@ -292,7 +341,7 @@ immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][8][Applets][14][Configuration]
-PreloadWeight=100
+PreloadWeight=0
 
 [Containments][8][Applets][15]
 immutability=1
@@ -313,11 +362,11 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][8][Applets][17][Configuration]
-PreloadWeight=100
+PreloadWeight=51
 
 [Containments][8][Applets][17][Configuration][ConfigDialog]
-DialogHeight=600
-DialogWidth=800
+DialogHeight=540
+DialogWidth=720
 
 [Containments][8][Applets][18]
 immutability=1
@@ -331,21 +380,21 @@ immutability=1
 plugin=org.kde.plasma.vault
 
 [Containments][8][Applets][19][Configuration]
-PreloadWeight=10
+PreloadWeight=0
 
 [Containments][8][Applets][20]
 immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][8][Applets][20][Configuration]
-PreloadWeight=100
+PreloadWeight=0
 
 [Containments][8][Applets][21]
 immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][8][Applets][21][Configuration]
-PreloadWeight=43
+PreloadWeight=0
 
 [Containments][8][Applets][22]
 immutability=1
@@ -359,7 +408,7 @@ immutability=1
 plugin=org.kde.plasma.diskquota
 
 [Containments][8][Applets][23][Configuration]
-PreloadWeight=47
+PreloadWeight=0
 
 [Containments][8][Applets][24][Configuration]
 PreloadWeight=42
@@ -379,11 +428,11 @@ DialogWidth=800
 PreloadWeight=0
 
 [Containments][8][General]
-extraItems=org.kde.plasma.clipboard,org.kde.plasma.keyboardindicator,org.kde.plasma.bluetooth,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.networkmanagement,org.kde.plasma.nightcolorcontrol,org.kde.plasma.battery,org.kde.plasma.mediacontroller,org.kde.kdeconnect,org.kde.plasma.devicenotifier,org.kde.plasma.vault,org.kde.plasma.diskquota,org.kde.plasma.volume,mate-optimus
+extraItems=org.kde.plasma.clipboard,org.kde.plasma.keyboardindicator,org.kde.plasma.bluetooth,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.networkmanagement,org.kde.plasma.nightcolorcontrol,org.kde.plasma.battery,org.kde.plasma.mediacontroller,org.kde.kdeconnect,org.kde.plasma.devicenotifier,org.kde.plasma.vault,org.kde.plasma.diskquota,org.kde.plasma.volume,org.kde.plasma.keyboardlayout,org.kde.kupapplet
 hiddenItems=org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,mate-optimus,org.kde.plasma.mediacontroller
-knownItems=org.kde.plasma.clipboard,org.kde.plasma.keyboardindicator,org.kde.plasma.bluetooth,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.volume,org.kde.plasma.networkmanagement,org.kde.plasma.nightcolorcontrol,org.kde.plasma.battery,org.kde.plasma.mediacontroller,org.kde.kdeconnect,org.kde.plasma.devicenotifier,org.kde.plasma.vault
+knownItems=org.kde.plasma.clipboard,org.kde.plasma.keyboardindicator,org.kde.plasma.bluetooth,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.volume,org.kde.plasma.networkmanagement,org.kde.plasma.nightcolorcontrol,org.kde.plasma.battery,org.kde.plasma.mediacontroller,org.kde.kdeconnect,org.kde.plasma.devicenotifier,org.kde.plasma.vault,org.kde.plasma.keyboardlayout,org.kde.kupapplet
 shownItems=org.kde.plasma.notifications
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/Pictures,0,desktop:/Vids,0,desktop:/cvjova.pdf,0,desktop:/favicon,0,desktop:/588a667fd06f6719692a2d19.png,0,desktop:/clicks.png,0,desktop:/recording-2021-09-06_14.48.45.mp4,0,desktop:/cert.der,0,desktop:/2021-09-11_18-29.png,0,desktop:/Docs,0,desktop:/org.kde.kdeconnect.app.desktop,0,desktop:/2021-09-16_10-29.png,0
+screenMapping=desktop:/training_generator.py,0,desktop:/WAF-DataTeamOnboarding-100122-1026-936.pdf,0,desktop:/Images,0,desktop:/NSMPDP.pdf,0,desktop:/Algodoo.desktop,0,desktop:/Arduino Create Agent.desktop,0,desktop:/Out-of-Band Data Exfitration Research Report.pdf,0,desktop:/log4j.pdf,0,desktop:/RaVWo7+N.csv,0

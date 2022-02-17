@@ -1,5 +1,6 @@
 [Plugins]
 kdeconnect_batteryEnabled=true
+kdeconnect_bigscreenEnabled=true
 kdeconnect_clipboardEnabled=true
 kdeconnect_contactsEnabled=true
 kdeconnect_findmyphoneEnabled=true

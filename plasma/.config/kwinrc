@@ -1,3 +1,6 @@
+[$Version]
+update_info=kwin.upd:desktop-grid-click-behavior,kwin.upd:no-swap-encourage
+
 [Compositing]
 Backend=OpenGL
 Enabled=true
@@ -5,7 +8,7 @@ GLCore=true
 GLPreferBufferSwap=a
 GLTextureFilter=2
 HiddenPreviews=5
-OpenGLIsUnsafe=false
+OpenGLIsUnsafe=true
 WindowsBlockCompositing=true
 XRenderSmoothScale=false
 
@@ -64,6 +67,7 @@ Mode=Location
 [Plugins]
 highlightwindowEnabled=true
 windowgeometryEnabled=false
+zoomEnabled=false
 
 [Script-desktopchangeosd]
 PopupHideDelay=300
@@ -121,4 +125,4 @@ WindowSnapZone=10
 
 [org.kde.kdecoration2]
 library=org.kde.kwin.aurorae
-theme=__aurorae__svg__Qogir-circle
+theme=__aurorae__svg__Qogir-dark-circle

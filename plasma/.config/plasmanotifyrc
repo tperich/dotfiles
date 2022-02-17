@@ -7,15 +7,30 @@ Seen=true
 [Applications][org.gnome.dejadup]
 Seen=true
 
+[Applications][org.gnome.feedreader]
+Seen=true
+ShowBadges=false
+ShowInHistory=false
+ShowPopups=false
+
+[Applications][rambox]
+Seen=true
+
 [Applications][rhythmbox]
 Seen=true
 
 [Applications][slack]
 Seen=true
 
+[Applications][teams]
+Seen=true
+
 [Applications][thunderbird]
 Seen=true
 
+[DoNotDisturb]
+Until=2022,2,17,13,58,0.906
+
 [Notifications]
 PopupPosition=BottomRight
-PopupTimeout=4000
+PopupTimeout=3000
