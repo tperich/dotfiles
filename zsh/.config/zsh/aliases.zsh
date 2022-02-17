@@ -63,7 +63,10 @@ alias c.s="cd ~/.config/sxhkd"
 alias c.t="cd ~/.config/tmux"
 
 # Git
+alias gc="git checkout"
 alias glom="git pull origin master"
+alias glod="git pull origin develop"
+alias gloq="git pull origin qa"
 alias glum="git pull upstream master"
 alias gloh="git pull origin HEAD"
 alias gpoh="git push origin HEAD"
@@ -79,8 +82,8 @@ alias tml="tmux ls"
 alias tmks="tmux kill-server"
 
 # Tmux scripts
-alias startvpn="~/scripts/tmux/vpn.sh"
-alias stopvpn="sudo killall openvpn && tmux kill-session -t vpn"
+alias startvpn="~/scripts/utility/vpn_login.sh"
+alias stopvpn="sudo killall openconnect"
 alias startmobile="~/scripts/tmux/mobile.sh"
 
 # Utility
