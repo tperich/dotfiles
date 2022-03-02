@@ -30,6 +30,7 @@ fi
 # Other commands
 alias cp="cp -v"
 alias rm="rm -v"
+alias mv="mv -v"
 
 # Moving around
 alias ~="cd ~"
