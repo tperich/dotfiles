@@ -45,6 +45,7 @@ nnoremap <leader>op :e ~/.config/nvim/plugins.vim<CR>
 nnoremap <leadeR>oc :e ~/.config/nvim/plugins_coc.vim<CR>
 nnoremap <leader>oo :e ~/.config/nvim/config.vim<CR>
 nnoremap <leader>ot :e ~/.config/nvim/theme.vim<CR>
+nnoremap <leader>oe :e ~/.config/nvim/templates/<CR>
 "}}}
 
 "}}}

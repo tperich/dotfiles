@@ -25,7 +25,7 @@ Plug 'jlanzarotta/bufexplorer'
 "Plug 'junegunn/fzf.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'ryanoasis/vim-devicons'
-"Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
@@ -43,6 +43,7 @@ Plug 'posva/vim-vue'
 Plug 'dense-analysis/ale'
 Plug 'leafgarland/typescript-vim'
 Plug 'fatih/vim-go'
+Plug 'noahfrederick/vim-skeleton'
 
 " Syntax
 Plug 'pangloss/vim-javascript'
@@ -85,6 +86,9 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:UltiSnipsSnippetDirectories = ['~/.config/nvim/UltiSnips/']
 let g:python_host_prog = "/usr/bin/python"
 let g:python3_host_prog = "/usr/bin/python3"
+
+" Skeleton
+let g:skeleton_template_dir = "~/.config/nvim/templates"
 
 " Nvim CoC
 source $HOME/.config/nvim/plugins_coc.vim
