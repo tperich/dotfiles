@@ -76,6 +76,8 @@ alias yolo="git push origin master --force"
 # npm
 alias nrs="npm run start"
 alias nra="npm run android"
+alias yrs="yarn start"
+alias yra="yarn android"
 
 # Tmux
 alias tma="tmux a"
