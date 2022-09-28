@@ -72,9 +72,12 @@ alias glum="git pull upstream master"
 alias gloh="git pull origin HEAD"
 alias gpoh="git push origin HEAD"
 alias yolo="git push origin master --force"
+alias gsi="git stash --include-untracked"
+alias gsp="git stash pop"
 
 # npm
 alias nrs="npm run start"
+alias nrw="npm run watch"
 alias nra="npm run android"
 alias yrs="yarn start"
 alias yra="yarn android"
@@ -94,10 +97,12 @@ alias wttr="curl wttr.in/novi+sad"
 alias wttrk="curl wttr.in/cologne"
 alias fdate="date +\"%d_%m_%Y_%I_%M_%p\""
 alias inet="hostname -I | cut -d' ' -f1"
-alias boing="paplay /usr/share/sounds/freedesktop/stereo/complete.oga"
+alias boing="mpv /usr/share/sounds/freedesktop/stereo/complete.oga 2>&1 > /dev/null"
 alias john="$HOME/.local/bin/johntheripper/john"
 alias update-from-master="git stash --include-untracked; git checkout master; \
     git pull origin master; git checkout -; git merge master; git stash pop"
+alias update-from-develop="git stash --include-untracked; git checkout develop; \
+    git pull origin develop; git checkout -; git merge develop; git stash pop"
 
 # Binaries
 if command -v nvim > /dev/null; then
