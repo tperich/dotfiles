@@ -1,5 +1,6 @@
 # ZSH
 zsh/.config/zsh/.zcompdump
+zsh/.config/zsh/.zsh_history
 
 # NeoVim
 nvim/.config/nvim/autoload/
