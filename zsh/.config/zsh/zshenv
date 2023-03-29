@@ -11,7 +11,7 @@ export PATH="/usr/local/go/bin:$PATH"
 export FILE="nnn"
 export VISUAL="nvim"
 export EDITOR="nvim"
-export VPN="protonvpn"
+export VPN="protonvpn-cli"
 export BROWSER="firefox"
 export TERMINAL="kitty"
 export TERM="xterm-256color"
@@ -26,6 +26,7 @@ export NNN_USE_EDITOR=1
 export NNN_SSHFS_OPTS="sshfs -o follow_symlinks"
 
 # Node Version Manager
+export N_PREFIX="$HOME/.node_versions"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

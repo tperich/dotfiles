@@ -69,7 +69,7 @@ alias glom="git pull origin master"
 alias glod="git pull origin develop"
 alias gloq="git pull origin qa"
 alias glum="git pull upstream master"
-alias gloh="git pull origin HEAD"
+alias gloh="git pull origin $(git symbolic-ref --short HEAD)"
 alias gpoh="git push origin HEAD"
 alias yolo="git push origin master --force"
 alias gsi="git stash --include-untracked"
@@ -97,7 +97,7 @@ alias wttr="curl wttr.in/novi+sad"
 alias wttrk="curl wttr.in/cologne"
 alias fdate="date +\"%d_%m_%Y_%I_%M_%p\""
 alias inet="hostname -I | cut -d' ' -f1"
-alias boing="mpv /usr/share/sounds/freedesktop/stereo/complete.oga 2>&1 > /dev/null"
+alias boing="mpv --no-terminal /usr/share/sounds/freedesktop/stereo/complete.oga"
 alias john="$HOME/.local/bin/johntheripper/john"
 alias update-from-master="git stash --include-untracked; git checkout master; \
     git pull origin master; git checkout -; git merge master; git stash pop"
@@ -143,8 +143,7 @@ alias :q="cowsay \"You're not in vim jackass\""
 alias :x="cowsay \"You're not in vim jackass\""
 
 # VPN
-alias pvpn="sudo $VPN"
-alias proton="sudo $VPN"
+alias pvpn="protonvpn-cli"
 alias getip="python3 $HOME/scripts/other/getip"
 
 # Unalias zsh's aliases
