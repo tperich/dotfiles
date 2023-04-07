@@ -23,6 +23,7 @@ antigen_path=$HOME/.local/share/antigen.zsh
 
 if [[ ! -f $antigen_path ]]; then
     echo "[+] Downloading Antigen"
+    mkdir ~/.local/share/
     curl -sL git.io/antigen -o $antigen_path &&
 	echo "[$] Downloaded successfully"
 fi
@@ -84,3 +85,5 @@ export PATH="$PATH:$HOME/.node_versions/bin"
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
